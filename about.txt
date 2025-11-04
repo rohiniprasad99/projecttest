@@ -1,0 +1,245 @@
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~
+$ git config --global user.name
+rohiniprasad.pudi
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~
+$ git config --global user.email
+rohiniprasadp@infinite.com
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~
+$ mkdir projecttest
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~
+$ cd projecttest
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest
+$ git init
+Initialized empty Git repository in C:/Users/rohiniprasadp/projecttest/.git/
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ ls -lart
+total 20
+drwxr-xr-x 1 INFICS+rohiniprasadp 4096 0 Nov  4 15:17 ../
+drwxr-xr-x 1 INFICS+rohiniprasadp 4096 0 Nov  4 15:19 ./
+drwxr-xr-x 1 INFICS+rohiniprasadp 4096 0 Nov  4 15:19 .git/
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ ls
+index.html
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git add -A
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git commit -m "first commit"
+[master (root-commit) 357035d] first commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git commit -a -m "second commit and created a new file first.html"
+[master 86669d8] second commit and created a new file first.html
+ 1 file changed, 1 insertion(+)
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git add .
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git commit -a -m "new file first.html"
+[master bf0bb12] new file first.html
+ 1 file changed, 11 insertions(+)
+ create mode 100644 first.html
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git status --short
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git log
+commit bf0bb12653d9c2ba816800d93ac6f345ce9d4da1 (HEAD -> master)
+Author: rohiniprasad.pudi <rohiniprasadp@infinite.com>
+Date:   Tue Nov 4 15:46:32 2025 +0530
+
+    new file first.html
+
+commit 86669d8ddc73ca7613a0f0194bc9b2293c76c8e7
+Author: rohiniprasad.pudi <rohiniprasadp@infinite.com>
+Date:   Tue Nov 4 15:43:36 2025 +0530
+
+    second commit and created a new file first.html
+
+commit 357035d3b6bbd5fa64d65575c2d86b1609a09f2d
+Author: rohiniprasad.pudi <rohiniprasadp@infinite.com>
+Date:   Tue Nov 4 15:36:29 2025 +0530
+
+    first commit
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git log -p -1
+commit bf0bb12653d9c2ba816800d93ac6f345ce9d4da1 (HEAD -> master)
+Author: rohiniprasad.pudi <rohiniprasadp@infinite.com>
+Date:   Tue Nov 4 15:46:32 2025 +0530
+
+    new file first.html
+
+diff --git a/first.html b/first.html
+new file mode 100644
+index 0000000..2ff8ea4
+--- /dev/null
++++ b/first.html
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>first page</title>
++</head>
++<body>
++    <h1>first page</h1>
++</body>
++</html>
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git add .
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git commit -m "third commit"
+[master 4e80fbe] third commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.txt
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git remote add origin https://github.com/rohiniprasad99/projecttest.git
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (12/12), 1.20 KiB | 246.00 KiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/rohiniprasad99/projecttest.git
+ * [new branch]      master -> master
+
+INFICS+rohiniprasadp@ICS-LT-2XW4DN3 MINGW64 ~/projecttest (master)
+$
